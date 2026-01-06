@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - TechStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><h1>🛍️ TechStore</h1></a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="produtos.html" class="nav-link">Produtos</a>
+                    <a href="sobre.html" class="nav-link active">Sobre Nós</a>
+                    <a href="contato.html" class="nav-link">Contacto</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="carrinho.html" class="cart-btn">
+                        🛒 Carrinho (<span id="cartCount">0</span>)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre Section -->
+    <section class="sobre-page">
+        <div class="container">
+            <div class="sobre-content">
+                <h2 class="section-title">Sobre a TechStore</h2>
+                <div class="sobre-texto">
+                    <p>Somos uma loja especializada em produtos tecnológicos de última geração. Com mais de 10 anos de experiência no mercado, oferecemos qualidade, garantia e os melhores preços do mercado.</p>
+                    <p>A nossa missão é levar tecnologia de ponta para todos, com um serviço de excelência e total compromisso com a satisfação dos nossos clientes.</p>
+                </div>
+                
+                <div class="valores">
+                    <h3>Os Nossos Valores</h3>
+                    <div class="valores-grid">
+                        <div class="valor-item">
+                            <div class="valor-icon">🎯</div>
+                            <h4>Qualidade</h4>
+                            <p>Selecionamos apenas os melhores produtos do mercado</p>
+                        </div>
+                        <div class="valor-item">
+                            <div class="valor-icon">🤝</div>
+                            <h4>Confiança</h4>
+                            <p>Transparência e honestidade em todas as relações</p>
+                        </div>
+                        <div class="valor-item">
+                            <div class="valor-icon">⚡</div>
+                            <h4>Inovação</h4>
+                            <p>Sempre na vanguarda da tecnologia</p>
+                        </div>
+                        <div class="valor-item">
+                            <div class="valor-icon">❤️</div>
+                            <h4>Dedicação</h4>
+                            <p>Comprometidos com a satisfação dos clientes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🚚</div>
+                        <h3>Portes Grátis</h3>
+                        <p>Para compras acima de 50€</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Compra Segura</h3>
+                        <p>Os seus dados protegidos</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">↩️</div>
+                        <h3>Devolução Fácil</h3>
+                        <p>Até 14 dias após a compra</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⭐</div>
+                        <h3>Garantia</h3>
+                        <p>24 meses de garantia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TechStore. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            atualizarCarrinho();
+        });
+    </script>
+</body>
+</html>
+

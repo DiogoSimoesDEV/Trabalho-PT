@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TechStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><h1>🛍️ TechStore</h1></a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="produtos.html" class="nav-link">Produtos</a>
+                    <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                    <a href="contato.html" class="nav-link active">Contacto</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="carrinho.html" class="cart-btn">
+                        🛒 Carrinho (<span id="cartCount">0</span>)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contato Section -->
+    <section class="contato-page">
+        <div class="container">
+            <h2 class="section-title">Entre em Contacto</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Informações de Contacto</h3>
+                    <div class="info-item">
+                        <strong>📧 E-mail:</strong> geral@techstore.pt
+                    </div>
+                    <div class="info-item">
+                        <strong>📱 Telemóvel:</strong> +351 912 345 678
+                    </div>
+                    <div class="info-item">
+                        <strong>☎️ Telefone:</strong> +351 21 123 4567
+                    </div>
+                    <div class="info-item">
+                        <strong>📍 Morada:</strong> Rua da Tecnologia, 123<br>1000-001 Lisboa, Portugal
+                    </div>
+                    <div class="info-item">
+                        <strong>🕒 Horário:</strong><br>
+                        Segunda a Sexta: 9h00 - 19h00<br>
+                        Sábado: 10h00 - 18h00<br>
+                        Domingo: Encerrado
+                    </div>
+                </div>
+                <form class="contato-form" id="contactForm">
+                    <h3>Envie-nos uma Mensagem</h3>
+                    <input type="text" name="nome" placeholder="O seu nome" required>
+                    <input type="email" name="email" placeholder="O seu e-mail" required>
+                    <input type="tel" name="telefone" placeholder="O seu telemóvel">
+                    <textarea name="mensagem" placeholder="A sua mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TechStore. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            atualizarCarrinho();
+            
+            document.getElementById('contactForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Mensagem enviada com sucesso! Entraremos em contacto em breve.');
+                e.target.reset();
+            });
+        });
+    </script>
+</body>
+</html>
+
